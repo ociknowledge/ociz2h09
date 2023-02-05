@@ -1,10 +1,11 @@
-![Banner](https://github.com/maxparra-architecture/musify-app/blob/main/Readme-Banner.jpg)
+![Banner](https://github.com/maxparra-architecture/oci-z2h-terraform/blob/master/Banner.jpg)
 
 
 Terraform Provider for Oracle Cloud Infrastructure
 ==================
 
-## Tech Stack
-* Mongo DB
-* Node JS
-* Angular
+- [Documentation](https://www.terraform.io/docs/providers/oci/index.html)
+- [Examples](https://github.com/oracle/terraform-provider-oci/tree/master/examples)
+- [OCI forums](https://cloudcustomerconnect.oracle.com/resources/9c8fa8f96f/summary)
+- [Github issues](https://github.com/oracle/terraform-provider-oci/issues)
+- [Troubleshooting](https://www.terraform.io/docs/providers/oci/guides/troubleshooting.html)
