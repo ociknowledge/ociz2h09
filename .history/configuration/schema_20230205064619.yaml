@@ -1,0 +1,88 @@
+# Copyright (c) 2020, Oracle and/or its affiliates. All rights reserved.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+
+  title: "OCI FROM ZERO TO HERO"
+  description: "Create a Compute Instance in Oracle Cloud Infrastructure"
+  schemaVersion: 1.1.0
+  version: "20220203"
+  locale: "en"
+
+#################
+# Variables
+#################
+
+  variableGroups:
+  - title: General Configuration
+    visible: false
+    variables:
+    - region
+    - compartment_ocid
+    - tenancy_ocid
+    
+  - title: Create VCN with Internet Connectivity
+    visible: true  
+    variables:
+    - vcn_name
+    - vcn_cidr
+    - vcn_dns_label
+    - internet_gateway_display_name
+
+  - title: Create Instance Compute for OZ2H App
+    visible: true  
+    variables:
+    - display_name
+    - image_id
+    - fault_domain
+
+
+  variables:
+    region:
+      title: Region
+      description: The OCI region where resources will be created
+      type: oci:identity:region:name
+      required: true
+
+    compartment_ocid:
+      title: Target Compartment
+      description: The target compartment id where to create all resources
+      type: oci:identity:compartment:id
+      required: true
+
+    vcn_name:
+      type: string
+      title: VCN Name
+      required: true
+      default: Test VCN
+
+    vcn_cidr:
+      title: VCN CIDR
+      description: IPv4 CIDR Blocks
+      type: string
+      default: 10.0.0.0/16
+      required: true
+
+    vcn_dns_label:
+      title: VCN DNS Label
+      type: string
+      required: false
+      default: vcn
+
+    internet_gateway_display_name:
+      title: Internet Gateway
+      description: Name of Internet Gateway. Does not have to be unique
+      type: string
+      required: true
+      default: internet-gateway
+
+    instance_display_name:
+      title: Instance Display Name
+      type: string
+      required: true
+      default: oz2h_instance
+
+    image_id:
+      title: Custom Image Id
+      description: ocid of your custom image
+      type: string
+      default: ocid1.image.oc1.iad.aaaaaaaanw4c2wtgohotx5qo62upm3tlfegukt47sdyuq6dw7hbirbwdxahq
+      required: true
