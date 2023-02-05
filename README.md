@@ -13,4 +13,4 @@ Terraform Provider for Oracle Cloud Infrastructure
 
 Architecture
 ------------
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/maxparra-architecture/oci-z2h-terraform/blob/master/Diagrama%20OZ2H.png)?raw=true)
+![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/maxparra-architecture/oci-z2h-terraform/blob/master/Diagrama%20OZ2H.png)
