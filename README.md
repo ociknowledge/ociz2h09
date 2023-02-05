@@ -11,6 +11,6 @@ Terraform Provider for Oracle Cloud Infrastructure
 - [Troubleshooting](https://www.terraform.io/docs/providers/oci/guides/troubleshooting.html)
 
 
-Architecture
+OZ2H App Architecture
 ------------
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/maxparra-architecture/oci-z2h-terraform/blob/master/Diagrama%20OZ2H.png)
+<img src="https://github.com/maxparra-architecture/oci-z2h-terraform/blob/master/Diagrama%20OZ2H.png" alt="Architecture" title="OZ2H App Architecture">
