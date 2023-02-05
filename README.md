@@ -15,4 +15,4 @@ OZ2H App Architecture
 ------------
 <img src="https://github.com/maxparra-architecture/oci-z2h-terraform/blob/master/Diagrama%20OZ2H.png" alt="Architecture" title="OZ2H App Architecture">
 
-Developed with ❤️ by MCR Knowledge Team
+Developed with 🤍 by Knowledge Team MCR
