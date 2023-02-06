@@ -60,7 +60,7 @@
       title: VCN CIDR
       description: IPv4 CIDR Blocks
       type: string
-      default: 10.0.0.0/16
+      default: 0.0.0.0/0
       required: true
 
     vcn_dns_label:

@@ -38,7 +38,7 @@ resource "oci_core_security_list" "public_security_list" {
   ingress_security_rules {
     #ICMP ("1"), TCP ("6"), UDP ("17"), and ICMPv6 ("58")
     protocol    = "6"
-    source      = "0.0.0.0/0"
+    source      = var.vcn_cidr
     source_type = "CIDR_BLOCK"
     stateless   = "false"
     tcp_options {
