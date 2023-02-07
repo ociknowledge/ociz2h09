@@ -11,8 +11,8 @@ Terraform Provider for Oracle Cloud Infrastructure
 - [Troubleshooting](https://www.terraform.io/docs/providers/oci/guides/troubleshooting.html)
 
 
-OZ2H App Architecture
+Oracle Cloud Infrastructure From Zero To Hero App Architecture
 ------------
-<img src="https://github.com/ociknowledge/ociz2h09/blob/master/Resources/Diagrama.png" alt="Architecture" title="OZ2H App Architecture">
+<img src="https://github.com/ociknowledge/ociz2h09/blob/master/Resources/Diagrama.png" alt="Architecture" title="OCIFZTH App Architecture">
 
 Developed with 🤍 by Knowledge Team MCR

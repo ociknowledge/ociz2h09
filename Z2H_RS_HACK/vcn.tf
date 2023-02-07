@@ -29,7 +29,7 @@ resource "oci_core_security_list" "public_security_list" {
   display_name = "Security List for Public Subnet"
 
   egress_security_rules {
-    destination      = "0.0.0.0/0"
+    destination      = "10.0.0.0/16"
     destination_type = "CIDR_BLOCK"
     protocol  = "6"
     stateless = "false"
