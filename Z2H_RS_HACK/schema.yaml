@@ -1,0 +1,111 @@
+# Copyright (c) 2023, Oracle and/or its affiliates. All rights reserved.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+
+  title: "OCI From Zero To Hero"
+  description: "Creación de una instancia de computo a partir de una imagen custom que desplegara la pagina oficial de From Zero To Hero."
+  schemaVersion: 1.1.0
+  version: "20230203"
+  locale: "es"
+
+#################
+# Variables
+#################
+
+  variableGroups:
+  - title: Configuración General
+    visible: false
+    variables:
+    - region
+    - compartment_ocid
+    - tenancy_ocid
+    - instance_ocpus
+    - instance_shape_config_memory_in_gbs
+    
+  - title: Creación de la VCN con interconexión a Internet
+    visible: true  
+    variables:
+    - vcn_name
+    - vcn_cidr
+    - vcn_dns_label
+    - internet_gateway_display_name
+
+  - title: Creación de la instancia de computo para la pagina oficial de From Zero To Hero
+    visible: true  
+    variables:
+    - instance_display_name
+    - image_id
+    - ad
+    - fault_domain
+
+  variables:
+    region:
+      title: Region
+      description: La región de OCI donde se crearán los recursos.
+      type: oci:identity:region:name
+      required: true
+
+    compartment_ocid:
+      title: Target Compartment
+      description: El ID del Target Compartment donde crear todos los recursos.
+      type: oci:identity:compartment:id
+      required: true
+
+    vcn_name:
+      title: Nombre de la VCN
+      type: string
+      default: Z2H_VCN_HACK
+      required: true
+
+    vcn_cidr:
+      title: VCN CIDR
+      description: IPv4 CIDR Blocks
+      type: string
+      default: 10.0.0.0/16
+      required: true
+
+    vcn_dns_label:
+      title: VCN DNS Etiqueta
+      description: Generado a partir del nombre de la red de nube virtual si no se especifica.
+      type: string
+      required: false
+      default: z2h
+
+    internet_gateway_display_name:
+      title: Internet Gateway
+      description: Nombre de la puerta de enlace de Internet. No tiene que ser único
+      type: string
+      required: true
+      default: Internet-Gateway
+
+    instance_display_name:
+      title: Nombre para mostrar de la instancia
+      type: string
+      required: true
+      default: Z2H_VM_HACK
+
+    image_id:
+      title: Identificación de Imagen Personalizada
+      description: OCID de su imagen personalizada
+      type: string
+      default: ocid1.image.oc1.iad.aaaaaaaa6brhj2rw6tfbar6ujz3ifddc3r7gr2dmzwrx45cknhguefzpnsaa
+      required: true
+
+    ad:
+      title: Availability Domain
+      type: enum
+      enum:
+        - 1
+        - 2
+        - 3
+      default: 1
+      required: true
+
+    fault_domain:
+      title: Fault Domain
+      type: enum
+      enum:
+        - "FAULT-DOMAIN-1"
+        - "FAULT-DOMAIN-2"
+        - "FAULT-DOMAIN-3"
+      default: "FAULT-DOMAIN-1"
+      required: true

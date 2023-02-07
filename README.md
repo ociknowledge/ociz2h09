@@ -1,4 +1,4 @@
-![Banner](https://github.com/maxparra-architecture/oci-z2h-terraform/blob/master/Banner.jpg)
+![Banner](https://github.com/ociknowledge/ociz2h09/blob/master/Resources/Banner.jpg)
 
 
 Terraform Provider for Oracle Cloud Infrastructure
@@ -13,6 +13,6 @@ Terraform Provider for Oracle Cloud Infrastructure
 
 OZ2H App Architecture
 ------------
-<img src="https://github.com/maxparra-architecture/oci-z2h-terraform/blob/master/Diagrama%20OZ2H.png" alt="Architecture" title="OZ2H App Architecture">
+<img src="https://github.com/ociknowledge/ociz2h09/blob/master/Resources/Diagrama.png" alt="Architecture" title="OZ2H App Architecture">
 
 Developed with 🤍 by Knowledge Team MCR
