@@ -8,7 +8,7 @@ Terraform Provider for Oracle Cloud Infrastructure
 - [Examples](https://github.com/oracle/terraform-provider-oci/tree/master/examples)
 - [OCI forums](https://cloudcustomerconnect.oracle.com/resources/9c8fa8f96f/summary)
 - [Github issues](https://github.com/oracle/terraform-provider-oci/issues)
-- [Troubleshooting](https://www.terraform.io/docs/providers/oci/guides/troubleshooting.html)
+- [Troubleshooting](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformtroubleshooting.htm)
 
 
 Oracle Cloud Infrastructure From Zero To Hero App Architecture
