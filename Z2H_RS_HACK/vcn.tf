@@ -29,7 +29,7 @@ resource "oci_core_security_list" "public_security_list" {
   display_name = "Security List for Public Subnet"
 
   egress_security_rules {
-    destination      = "10.0.0.0/16"
+    destination      = "0.0.0.0/0"
     destination_type = "CIDR_BLOCK"
     protocol  = "6"
     stateless = "false"
@@ -38,7 +38,7 @@ resource "oci_core_security_list" "public_security_list" {
   ingress_security_rules {
     #ICMP ("1"), TCP ("6"), UDP ("17"), and ICMPv6 ("58")
     protocol    = "6"
-    source      = "0.0.0.0/0"
+    source      = "10.0.0.0/16"
     source_type = "CIDR_BLOCK"
     stateless   = "false"
     tcp_options {
